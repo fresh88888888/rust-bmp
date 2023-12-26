@@ -17,8 +17,9 @@
 //!
 //! ```
 //! #[macro_use]
-//! extern crate bmp;
-//! use bmp::{Image, Pixel};
+//! extern crate two;
+//! use two::{Image, Pixel};
+//! use two::px;
 //!
 //! fn main() {
 //!     let mut img = Image::new(256, 256);
@@ -39,6 +40,7 @@ use std::io;
 use std::io::{Cursor, Read, Write};
 use std::iter::Iterator;
 use std::path::Path;
+
 
 // Expose decoder's public types, structs, and enums
 pub use decoder::{BmpError, BmpErrorKind, BmpResult};
