@@ -1,6 +1,6 @@
 extern crate byteorder;
-use crate::Image;
 use byteorder::{LittleEndian, WriteBytesExt};
+use crate::Image;
 use std::io::{self, Write};
 
 const B: u8 = 66;
